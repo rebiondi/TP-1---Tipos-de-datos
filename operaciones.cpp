@@ -1,6 +1,6 @@
 /* TP #1 - Tipos de Datos - En el programa se realizan algunas operaciones con los tipos de datos int, double, char, string y bool.
-* Biondi, Rolando Ezequiel
-* 12/04/2015
+  Biondi, Rolando Ezequiel
+  18/04/2015
 */
 
 #include <iostream>
@@ -20,23 +20,32 @@ int main(){
     cin>>x;
     cout<<"\nIngrese otro numero: ";
     cin >>y;
-    cout<<"La suma de esos numeros es: " << x+y;
-    cout<<"\nLa resta de esos numeros es: " << x-y;
-    cout<<"\nLa multiplicacion de esos numeros es: " << x*y;
+
+    if(x>0 and y<x){
+        cout<<"La suma de esos numeros es: " << x+y;
+        cout<<"\nLa suma entre el primer numero y 2 es: " << x+2;
+    }
+    else{
+        cout<<"\nLa resta de esos numeros es: " << x-y;
+        cout<<"\nLa multiplicacion de esos numeros es: " << x*y;
+    }
+
 
     cout<<"\n\n2- Ingrese un numero con coma para realizar operaciones matematicas: ";
     cin>>v;
     cout<<"\nIngrese otro numero: ";
     cin >>w;
+    if(w not 0 or v==w)
     cout<<"La suma de esos numeros es: " << v+w;
     cout<<"\nLa resta de esos numeros es: " << v-w;
-    cout<<"\nLa multiplicacion de esos numeros es: " << v*w;
-    if(y!=0){
-            cout<<"\nLa division de esos numeros es: " << v/w;
-    }
     else{
+        cout<<"\nLa multiplicacion de esos numeros es: " << v*w;
+        if(y!=0){
+        cout<<"\nLa division de esos numeros es: " << v/w;
+        }
+        else{
             cout <<"\nNo se puede dividir por cero";
-    }
+        }
 
     cout<<"\n\n3- El sistema tiene un caracter guardado, ingrese uno para ver si son iguales: ";
     cin>>b;
